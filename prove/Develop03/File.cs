@@ -10,5 +10,7 @@ public class File{
 
         return _scriptureString;
     }
-
+    public void ClearFile(){
+        System.IO.File.WriteAllText("Scripture.txt", string.Empty);
+    }
 }

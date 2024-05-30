@@ -5,9 +5,9 @@ using System.Runtime.CompilerServices;
 
 /* 
     To exceed requirements, I have the user paste the body of the verses into the 
-    Scripture.txt file. This assumes that each verse is on its own line (which will
-    naturally happen when you paste it). The user is prompted for the reference, then 
-    prompted to put the scripture in the file. Consider using BYU scripture citation
+    Scripture.txt file before running the code. This assumes that each verse is on
+    its own line (which will
+    naturally happen when you paste it). Use BYU scripture citation
     index to copy the scripture. It does not copy the footnotes. The HideTwoRandom()
     method still occasionally hides words already hidden.
 */
@@ -59,18 +59,6 @@ class Program
 
         // Build Citation:
             Citation citation = new Citation(book, chapter, firstVerse, lastVerse);
-
-        // Populate File
-
-        while(true){
-            Console.WriteLine("Copy and paste the scripture into the Scripture.txt file");
-            Console.WriteLine("Type 'done' when finished" );
-            string proceed = Console.ReadLine();
-            if(proceed == "done"){
-                break;
-            }
-        }
-
         Console.WriteLine();
 
         // Create Memorize Object: 
@@ -104,5 +92,6 @@ class Program
         // Final State of Scripture:
         Console.Clear();
         memorize.Display();
+        file.ClearFile();
     }
 }

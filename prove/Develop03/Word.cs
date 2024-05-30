@@ -25,6 +25,6 @@ public class Word{
         _revealed = false;
     }
     public bool GetBool(){return _revealed;}
-    public string GetString(){return _word;}
+   
 
 }

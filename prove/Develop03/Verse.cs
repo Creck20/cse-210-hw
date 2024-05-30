@@ -20,10 +20,6 @@ public class Verse {
         }
     }
 
-    public int GetWordCount() {
-        return _wordList.Count;
-    }
-
     public int GetRevealedCount() {
         int wordCount = 0;
         foreach(Word word in _wordList) {
