@@ -3,6 +3,14 @@ using System.Dynamic;
 using System.Reflection.Metadata;
 using System.Runtime.CompilerServices;
 
+/* 
+    To exceed requirements, I have the user paste the body of the verses into the 
+    Scripture.txt file. This assumes that each verse is on its own line (which will
+    naturally happen when you paste it). The user is prompted for the reference, then 
+    prompted to put the scripture in the file. Consider using BYU scripture citation
+    index to copy the scripture. It does not copy the footnotes. The HideTwoRandom()
+    method still occasionally hides words already hidden.
+*/
 class Program
 {
     static void Main(string[] args)
