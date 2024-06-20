@@ -2,6 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;
 
+/*
+To exceed requirements: I have created a variable animation time that is set in each activity. 
+I have also created the hyperventilate and Wim Hof (death) classes. 
+*/
 class Program
 {
     static void Main(string[] args)
@@ -152,7 +156,7 @@ class Program
                     Death death = new Death("\nWelcome to the reflecting activity.\n"
                     + "This activity will help you escape your troubles for a bit.\n"
                     + "Warning: May cause unconsciousness or prove fatal.\n",
-                    "reflecting", 2.5);
+                    "reflecting", 7);
                     
                     death.DisplayWelcome();
 
