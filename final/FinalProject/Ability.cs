@@ -21,37 +21,37 @@ public class Abililty{
         return _intelligence;
     }
     public void SetInt(int intelligence){
-        _intelligence = intelligence;
+        _intelligence += intelligence;
     }
     public int GetStr(){
         return _strength;
     }
     public void SetStr(int strength){
-        _strength = strength;
+        _strength += strength;
     }
     public int GetDex(){
         return _dexterity;
     }
     public void SetDex(int dexterity){
-        _dexterity = dexterity;
+        _dexterity += dexterity;
     }
     public int GetCon(){
         return _constitution;
     }
     public void SetCon(int constitution){
-        _constitution = constitution;
+        _constitution += constitution;
     }
     public int GetWis(){
         return _wisdom;
     }
     public void SetWis(int wisdom){
-        _wisdom = wisdom;
+        _wisdom += wisdom;
     }
     public int GetCha(){
         return _charisma;
     }
     public void SetCha(int charisma){
-        _charisma = charisma;
+        _charisma += charisma;
     }
     public int GetStrMod(){
         return _strMod;
@@ -92,6 +92,23 @@ public class Abililty{
     public int GetProfBonus(){
         return _profBonus;
     }
+    // This will only be used in testing to speed up the program: 
+    public Abililty(string test){
+        _strength = 10;
+        _dexterity = 10;
+        _constitution = 10; 
+        _intelligence = 10; 
+        _wisdom = 10; 
+        _charisma = 10; 
+        _strMod = 1;
+        _dexMod = 1; 
+        _conMod = 1; 
+        _intMod = 1;
+        _wisMod = 1; 
+        _chaMod = 1; 
+    }
+    // This will be used in the program
+    public Abililty(){}
     public void ChooseAbility(){
         // Select a score from RollList:
         Console.WriteLine("\nPlease select a value: ");

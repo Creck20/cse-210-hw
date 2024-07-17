@@ -1,0 +1,58 @@
+
+Your abilities are:
+    Strength: 12 (+1)
+    Dexterity: 10 (+1)
+    Constitution: 10 (+1)
+    Intelligence: 10 (+1)
+    Wisdom: 10 (+1)
+    Charisma: 11 (0)
+
+Hit Points: 7
+Hit dice: 1d6
+
+Skills:
+History
+Insight
+arcana
+history
+
+Saving Throws:
+Intelligence
+Wisdom
+
+Armor Proficiency: none
+Weapon Proficiency: daggers, darts, slings, quarterstaffs, light crossbows
+Tool Proficiency: none
+
+Equipment: 
+a Spellbook
+a quaterstaff
+a component pouch
+a scholar's pack
+a bottle of ink
+a quill
+a small knife
+a letter from a dead friend
+Clothing
+10 gp
+
+Passive Perception: 1
+
+Languages: 
+Common
+Draconic
+
+Background Trait: When you attempt to learn or recall a piece of lore, if you do not know that information,
+you often know where and from whom you can obtain it. Usually, this information comes from a library,
+scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge
+you seek is secreted away in an almost inaccessible place, or that it simply cannot be found.
+
+ Size: medium
+Speed: 30 ft
+
+Racial Traits:
+Draconic Ancestry Bronze:  2d6 Fire Damage, 5' by 30' line (Dex Save)
+Resistant to fire damage
+
+Spell Save DC: 11
+Spell Attack Modifier: 3
