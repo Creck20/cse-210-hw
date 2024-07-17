@@ -8,27 +8,27 @@ class Program
         Console.WriteLine("Welcome to the Lvl 1 DND 5e Character Creator!");
         Console.WriteLine("Lets get started by choosing your ability scores: ");
 
-        // Use for testing: 
-        Abililty ability = new Abililty("test");
-        ability.DisplayAbilities();
+        // // Use for testing: 
+        // Ability ability = new Ability("test");
+        // ability.DisplayAbilities();
 
 
         // Use in program: 
         // Choose ability scores: 
-        // Abililty abililty = new Abililty();
-        // abililty.GenerateRollList();
-        // abililty.DisplayAbilities();
+        Ability ability = new Ability();
+        ability.GenerateRollList();
+        ability.DisplayAbilities();
         
-        // bool done = false;
-        // while (!done){
-        //     abililty.ChooseAbility();
-        //     abililty.DisplayAbilities();
-        //     Console.WriteLine("Are you finished? (y/n) ");
-        //     string finished = Console.ReadLine();
-        //     if (finished == "y"){
-        //         done = true;
-        //     }
-        // }
+        bool done = false;
+        while (!done){
+            ability.ChooseAbility();
+            ability.DisplayAbilities();
+            Console.WriteLine("Are you finished? (y/n) ");
+            string finished = Console.ReadLine();
+            if (finished == "y"){
+                done = true;
+            }
+        }
 
         // Define Classes: 
         Proficiency proficiency = new Proficiency();

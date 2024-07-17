@@ -2,7 +2,7 @@ using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-public class Abililty{
+public class Ability{
     private int _strength = 0;
     private int _dexterity = 0;
     private int _constitution = 0;
@@ -93,7 +93,7 @@ public class Abililty{
         return _profBonus;
     }
     // This will only be used in testing to speed up the program: 
-    public Abililty(string test){
+    public Ability(string test){
         _strength = 10;
         _dexterity = 10;
         _constitution = 10; 
@@ -108,18 +108,18 @@ public class Abililty{
         _chaMod = 1; 
     }
     // This will be used in the program
-    public Abililty(){}
+    public Ability(){}
     public void ChooseAbility(){
         // Select a score from RollList:
         Console.WriteLine("\nPlease select a value: ");
-        Console.WriteLine($"    0. {_rollList[0]}");
-        Console.WriteLine($"    1. {_rollList[1]}");
-        Console.WriteLine($"    2. {_rollList[2]}");
-        Console.WriteLine($"    3. {_rollList[3]}");
-        Console.WriteLine($"    4. {_rollList[4]}");
-        Console.WriteLine($"    5. {_rollList[5]}");
+        Console.WriteLine($"    1. {_rollList[0]}");
+        Console.WriteLine($"    2. {_rollList[1]}");
+        Console.WriteLine($"    3. {_rollList[2]}");
+        Console.WriteLine($"    4. {_rollList[3]}");
+        Console.WriteLine($"    5. {_rollList[4]}");
+        Console.WriteLine($"    6. {_rollList[5]}");
         Console.WriteLine("YourChoice: ");
-        int index = int.Parse(Console.ReadLine());
+        int index = int.Parse(Console.ReadLine()) - 1;
 
         // Assign that score to an ability: 
         Console.WriteLine("\nPlease select an ability to assign: ");
